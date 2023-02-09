@@ -1,0 +1,65 @@
+.mainImg {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+
+  .block {
+    position: relative;
+    transform: 0.9s;
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(70%);
+    }
+
+    .inBlock {
+      position: absolute;
+      text-align: center;
+
+      p {
+        font-family: "Playfair Display";
+        font-weight: 400;
+        font-size: 40px;
+        color: #fdfbf8;
+      }
+
+      button {
+        background: #e0eff6;
+        border-radius: 6px;
+        font-family: "Open Sans";
+        font-size: 15px;
+        color: #07484a;
+      }
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 610px) {
+  .mainImg {
+    gap: 20px;
+    .block {
+      .inBlock {
+        p {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .mainImg {
+    grid-template-columns: 1fr;
+    .block {
+      .inBlock {
+        p {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}

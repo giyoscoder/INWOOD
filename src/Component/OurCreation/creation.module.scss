@@ -1,0 +1,21 @@
+.mainCreation {
+  box-sizing: border-box;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+}
+
+@media (max-width: 570px) {
+  .mainCreation {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 320px) {
+  .mainCreation {
+    grid-template-columns: 1fr;
+  }
+}

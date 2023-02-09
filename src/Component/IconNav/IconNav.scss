@@ -1,0 +1,17 @@
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    
+    i {
+        color: #fff;
+        transition: .5s;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+

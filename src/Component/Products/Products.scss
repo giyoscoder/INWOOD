@@ -1,0 +1,124 @@
+.mainProducts {
+  padding: 100px 0;
+  position: relative;
+  //   width: 100%;
+  overflow: hidden;
+
+  h1.prdTitle {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 85px;
+    color: #07484a;
+    text-align: center;
+  }
+
+  img.bgChair {
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+    object-position: left center;
+    position: absolute;
+    z-index: -1;
+    margin: 50px 0;
+  }
+
+  .mainDiv {
+    display: flex;
+    // width: 2000px;
+    gap: 32px;
+    // margin: 50px 0 50px 150px;
+    margin-left: 150px;
+    overflow-x: scroll;
+    margin-top: 60px;
+    padding-bottom: 50px;
+
+    .card {
+      padding: 30px 50px;
+      display: block;
+      background-color: #caf3e5;
+      border-radius: 16px;
+
+      img {
+        width: 200px;
+        height: 200px;
+      }
+
+      p {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-size: 24px;
+        line-height: 36px;
+        color: #70908b;
+        margin: 0 80px 0 0;
+        width: 100%;
+      }
+    }
+
+    .pink {
+      background-color: #fff4e7;
+    }
+
+    .threeColor {
+      background-color: #e0eff6;
+    }
+
+    .fourColor {
+      background-color: #eeebff;
+    }
+  }
+
+  .mainDiv::-webkit-scrollbar {
+    height: 5px;
+  }
+
+  .mainDiv::-webkit-scrollbar-thumb {
+    background-color: #70908b;
+    width: 10px;
+  }
+
+  .mainDiv::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: #07484a;
+    width: 80px;
+    margin-inline: 0 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainProducts {
+    h1.prdTitle {
+      font-size: 50px;
+    }
+
+    .mainDiv {
+      margin-left: 80px;
+
+      .card {
+        padding: 25px 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .mainProducts {
+    .mainDiv {
+      margin-left: 20px;
+
+      .card {
+        padding: 20px 30px;
+
+        img {
+          width: 150px;
+          height: 150px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

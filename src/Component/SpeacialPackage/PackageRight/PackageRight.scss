@@ -1,0 +1,157 @@
+.top {
+  .description {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: -0.02em;
+    color: #07484a;
+  }
+
+  .lorem {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    color: #07484a;
+    padding: 20px 0;
+  }
+
+  .lorem + p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 115%;
+    letter-spacing: -0.02em;
+    color: #000000;
+    cursor: pointer;
+  }
+}
+.scrollParant {
+  width: 100%;
+  box-sizing: border-box;
+  overflow-y: hidden;
+
+  .bottomScrolled {
+    margin-block: 20px;
+    height: 400px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+
+    .typeRoom {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 25px;
+      margin-block: 30px;
+      cursor: pointer;
+
+      .leftImg {
+        img {
+          border-radius: 10px;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .rightAbout {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 30px 20px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        transition: 0.5s;
+
+        &:hover {
+          background-color: #e0f6f1;
+        }
+
+        .set {
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 400;
+          line-height: 25px;
+
+          .livingRoom {
+            font-size: 18px;
+            line-height: 30px;
+            color: #07484a;
+          }
+
+          .livingRoom ~ p {
+            font-size: 16px;
+            letter-spacing: -0.02em;
+            text-decoration-line: underline;
+            color: #07484a;
+          }
+        }
+
+        .price {
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 115%;
+          letter-spacing: -0.02em;
+          color: #07484a;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .scrollParant {
+    .bottomScrolled {
+      display: flex;
+      flex-wrap: wrap;
+      // height: auto;
+      // gap: 30px;
+      overflow-y: scroll;
+      // overflow-y: hidden;
+
+      &::-webkit-scrollbar {
+        height: 5px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #70908b;
+        width: 10px;
+      }
+
+      &::-webkit-scrollbar-track {
+        border-radius: 8px;
+        background-color: #07484a;
+        // width: 80px;
+      }
+
+      .typeRoom {
+        // width: 100%;
+        height: 150px;
+        // margin-block: 30px;
+        min-width: 80%;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .scrollParant {
+    display: grid;
+    grid-template-columns: 1fr;
+    .bottomScrolled {
+      height: auto;
+      .typeRoom {
+        grid-template-columns: 1fr;
+        // gap: 1000px;
+        .leftImg {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

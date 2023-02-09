@@ -1,0 +1,66 @@
+.packageLeft {
+  .packageImg {
+    width: 100%;
+    img {
+      max-width: 100% !important;
+      width: 100%;
+    }
+  }
+
+  .imgAbout {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    line-height: 50px;
+    margin-top: 30px;
+
+    p.larkin {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      color: #07484a;
+    }
+
+    img {
+      max-width: 100%;
+      width: 70%;
+    }
+    p.larkin ~ p {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      letter-spacing: -0.02em;
+      color: #07484a;
+    }
+
+    button {
+      font-size: 15px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .packageLeft {
+    display: flex;
+    gap: 30px;
+
+    .imgAbout {
+      flex-direction: column;
+      justify-content: flex-start;
+      line-height: 45px;
+
+      p.larkin {
+        font-size: 30px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .packageLeft {
+    flex-wrap: wrap;
+  }
+}

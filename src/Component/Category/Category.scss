@@ -1,0 +1,31 @@
+.expore {
+  text-align: center;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  // line-height: 85px;
+  color: #07484a;
+  padding: 100px 0;
+}
+
+.sides {
+  display: grid;
+  grid-template-columns: 30% 65%;
+  gap: 50px;
+}
+
+@media (max-width: 950px) {
+  .expore {
+    font-size: 54px;
+  }
+  .sides {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 570px) {
+  .expore {
+    font-size: 40px;
+  }
+}

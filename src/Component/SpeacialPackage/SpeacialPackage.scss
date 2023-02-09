@@ -1,0 +1,22 @@
+.specialTitle {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  color: #07484a;
+  text-align: center;
+}
+
+.bothSide {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin-block: 50px 100px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+  .bothSide {
+    grid-template-columns: 1fr;
+  }
+}
